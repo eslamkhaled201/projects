@@ -1,0 +1,21 @@
+body{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+.background-photo{
+    padding-top: 40vh;
+    min-height: 100vh;
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color,0.8) ,
+        rgba($primary-color,0.5)
+    ),
+    url("../img/model-1.jpg") center top;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+}
