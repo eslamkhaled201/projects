@@ -102,7 +102,7 @@ function displayProducts() {
     for (i = 0; i < productContainer.length; i++) {
         if (productContainer[i].sale == true) {
             temp += ` <div  id="product" class="col-md-4 col-sm-6 mb-3 ">
-            <img  class="img-fluid " src="images/2.jpg" alt="">
+            <img  class="img-fluid " src="./crud/images/2.jpg" alt="">
             <h4 class="mt-3"> `+ productContainer[i].name + ` <span  class="badge badge-primary bg-info ">  ` + productContainer[i].cat + ` </span></h4>
             <h6>  `+ productContainer[i].price + ` EGP </h6>
             <p >  `+ productContainer[i].desc + `</p>
@@ -114,7 +114,7 @@ function displayProducts() {
             </div> `;
         } else {
             temp += `<div  id="product" class="col-md-4 col-sm-6 mb-3   ">
-            <img  class="img-fluid " src="images/2.jpg" alt="">
+            <img  class="img-fluid " src="./crud/images/2.jpg" alt="">
             <h4 class=" mt-3 "> `+ productContainer[i].name + ` <span  class="badge badge-primary bg-info  ">  ` + productContainer[i].cat + ` </span></h4>
             <h6>  `+ productContainer[i].price + ` EGP</h6>
             <p >  `+ productContainer[i].desc + `</p>
@@ -146,7 +146,7 @@ function searchProducts(word) {
         if (productContainer[i].name.toLowerCase().includes(word.toLowerCase()) == true) {
             if (productContainer[i].sale == true) {
                 temp += ` <div  id="product" class="col-md-4 col-sm-6 mb-3  ">
-            <img  class="img-fluid " src="images/2.jpg" alt="">
+            <img  class="img-fluid " src="./crud/images/2.jpg" alt="">
             <h4 class="pt-3"> `+ productContainer[i].name + ` <span  class="badge badge-primary bg-info ">  ` + productContainer[i].cat + ` </span></h4>
             <h6>  `+ productContainer[i].price + `LE </h6>
             <p>  `+ productContainer[i].desc + `</p>
@@ -158,7 +158,7 @@ function searchProducts(word) {
             </div> `;
             } else {
                 temp += `<div  id="product" class="col-md-4 col-sm-6 mb-3 ">
-                <img  class="img-fluid " src="images/2.jpg" alt="">
+                <img  class="img-fluid " src="./crud/images/2.jpg" alt="">
                 <h4 class="pt-3"> `+ productContainer[i].name + ` <span  class="badge badge-primary bg-info ">  ` + productContainer[i].cat + ` </span></h4>
                 <h6>  `+ productContainer[i].price + `LE </h6>
                 <p>  `+ productContainer[i].desc + `</p>
