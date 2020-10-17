@@ -1,0 +1,50 @@
+@import './config';
+@import './home';
+@import './navBar';
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    
+    .who-i{  
+        text-align: center;  
+        h1{
+            font-size: 5rem;
+            font-weight: 400;
+            padding-bottom: 10px;
+            border-bottom: white 2px solid;
+            margin-bottom: 1%;
+            .last-name{
+                color: $secondry-color;
+                font-weight: 700;
+            }
+        }
+        h2{
+            letter-spacing: 0.3px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    .social-media{
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        a{
+            @include transition-ease-in-out;
+            padding: 0.5rem;
+            &:hover{
+                color: $secondry-color;
+            }
+            
+        }
+    }
+}
+footer{
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
